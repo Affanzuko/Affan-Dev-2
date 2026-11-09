@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%" fill="none">
+    <defs>
+        <linearGradient id="nf-bg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#111C30"/>
+            <stop offset="100%" stop-color="#0B1120"/>
+        </linearGradient>
+    </defs>
+    <rect width="800" height="500" rx="16" fill="url(#nf-bg)"/>
+    <rect x="1" y="1" width="798" height="498" rx="15" stroke="rgba(148, 163, 184, 0.18)" stroke-width="2"/>
+    
+    <!-- Header -->
+    <rect x="24" y="24" width="752" height="40" rx="8" fill="#182642"/>
+    <circle cx="50" cy="44" r="5" fill="#EF4444" opacity="0.8"/>
+    <circle cx="68" cy="44" r="5" fill="#F59E0B" opacity="0.8"/>
+    <circle cx="86" cy="44" r="5" fill="#10B981" opacity="0.8"/>
+    <rect x="110" y="34" width="320" height="20" rx="5" fill="#111C30"/>
+    <text x="125" y="48" fill="#94A3B8" font-family="Inter, sans-serif" font-size="11">nikifrozen.local/pos/dashboard</text>
+    <rect x="660" y="34" width="100" height="20" rx="5" fill="rgba(56, 189, 248, 0.2)"/>
+    <text x="672" y="48" fill="#38BDF8" font-family="Inter, sans-serif" font-size="11" font-weight="600">POS &amp; Inventory</text>
+
+    <!-- Top Banner -->
+    <rect x="24" y="80" width="752" height="150" rx="12" fill="#152238" stroke="rgba(56, 189, 248, 0.2)"/>
+    <text x="56" y="125" fill="#38BDF8" font-family="Inter, sans-serif" font-size="13" font-weight="600" letter-spacing="1.5">INTEGRATED SYSTEM</text>
+    <text x="56" y="165" fill="#F1F5F9" font-family="Inter, sans-serif" font-size="28" font-weight="700">Niki Frozen Management System</text>
+    <text x="56" y="195" fill="#94A3B8" font-family="Inter, sans-serif" font-size="13">Point of Sale, barcode intake, multi-branch operations, and perishable expiry monitoring.</text>
+
+    <!-- 3 Metrics cards -->
+    <rect x="24" y="250" width="235" height="180" rx="10" fill="#182642" stroke="rgba(148, 163, 184, 0.15)"/>
+    <text x="44" y="285" fill="#94A3B8" font-family="Inter, sans-serif" font-size="12">Branch Operations</text>
+    <text x="44" y="325" fill="#F1F5F9" font-family="Inter, sans-serif" font-size="22" font-weight="700">2 Active Branches</text>
+    <text x="44" y="355" fill="#38BDF8" font-family="Inter, sans-serif" font-size="12">Role: GM &amp; Cashier Views</text>
+    <rect x="44" y="380" width="140" height="26" rx="5" fill="#111C30"/>
+    <text x="54" y="397" fill="#94A3B8" font-family="Inter, sans-serif" font-size="11">Shift Tracking</text>
+
+    <rect x="282" y="245" width="235" height="190" rx="10" fill="#1E2E4E" stroke="#38BDF8" stroke-width="1.5"/>
+    <rect x="302" y="265" width="100" height="22" rx="4" fill="rgba(239, 68, 68, 0.25)"/>
+    <text x="312" y="280" fill="#FCA5A5" font-family="Inter, sans-serif" font-size="11" font-weight="600">EXPIRY ALERT</text>
+    <text x="302" y="325" fill="#F1F5F9" font-family="Inter, sans-serif" font-size="22" font-weight="700">&lt; 7 Days Threshold</text>
+    <text x="302" y="355" fill="#94A3B8" font-family="Inter, sans-serif" font-size="12">Automated shelf warnings.</text>
+    <rect x="302" y="380" width="110" height="26" rx="5" fill="#38BDF8"/>
+    <text x="316" y="397" fill="#0B1120" font-family="Inter, sans-serif" font-size="11" font-weight="700">Protected</text>
+
+    <rect x="541" y="250" width="235" height="180" rx="10" fill="#182642" stroke="rgba(148, 163, 184, 0.15)"/>
+    <text x="561" y="285" fill="#94A3B8" font-family="Inter, sans-serif" font-size="12">Payment Modes</text>
+    <text x="561" y="325" fill="#F1F5F9" font-family="Inter, sans-serif" font-size="22" font-weight="700">Cash &amp; QRIS</text>
+    <text x="561" y="355" fill="#94A3B8" font-family="Inter, sans-serif" font-size="12">Barcode stock intake.</text>
+    <rect x="561" y="380" width="120" height="26" rx="5" fill="#111C30"/>
+    <text x="571" y="397" fill="#94A3B8" font-family="Inter, sans-serif" font-size="11">Fast Checkout</text>
+
+    <!-- Bottom Notice -->
+    <rect x="24" y="452" width="752" height="26" rx="6" fill="rgba(15, 23, 42, 0.9)" stroke="rgba(56, 189, 248, 0.3)"/>
+    <text x="240" y="469" fill="#38BDF8" font-family="Inter, sans-serif" font-size="11" font-weight="500">Preview Diagram / Placeholder — Real Application Screenshot to be supplied by owner</text>
+</svg>

@@ -1,0 +1,21 @@
+{
+  "name": "affan-dev-portfolio",
+  "version": "1.0.0",
+  "description": "Personal branding and developer portfolio website for Muhammad Affan Al Ghifari (AFFAN.DEV)",
+  "main": "index.html",
+  "scripts": {
+    "start": "node serve.js",
+    "serve": "node serve.js",
+    "generate-placeholders": "node generate_placeholders.js"
+  },
+  "keywords": [
+    "portfolio",
+    "affan-dev",
+    "web-developer",
+    "concerttix",
+    "niki-frozen",
+    "dark-modern"
+  ],
+  "author": "Muhammad Affan Al Ghifari",
+  "license": "MIT"
+}

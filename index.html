@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AFFAN.DEV — Muhammad Affan Al Ghifari | Web Developer &amp; System Developer</title>
+  
+  <!-- SEO & Metadata -->
+  <meta name="description" content="Personal branding and developer portfolio of Muhammad Affan Al Ghifari (AFFAN.DEV) — Web Developer and System Developer specializing in modern web applications, POS systems, and information systems.">
+  <meta name="keywords" content="Muhammad Affan Al Ghifari, AFFAN.DEV, Web Developer, System Developer, Portfolio, ConcertTix, Niki Frozen, PHP, Laravel, MySQL, AMIKOM">
+  <meta name="author" content="Muhammad Affan Al Ghifari">
+  
+  <!-- Open Graph / Social Cards -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AFFAN.DEV — Muhammad Affan Al Ghifari | Web Developer &amp; System Developer">
+  <meta property="og:description" content="Turning Ideas Into Digital Solutions. Web applications, POS systems, and case studies for ConcertTix and Niki Frozen.">
+  <meta property="og:image" content="assets/images/profile/foto-affan.png">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Navigation Bar
+       ========================================================================== -->
+  <header class="site-nav" id="siteHeader">
+    <div class="container nav-container">
+      <a href="#home" class="nav-brand" aria-label="AFFAN.DEV Home">
+        <span>AFFAN<span class="brand-dot">.</span>DEV</span>
+        <span class="brand-badge">PORTFOLIO</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Desktop CTA & Mobile Toggle -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-sm">Let's Talk</a>
+        <button class="mobile-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileNavMenu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav Drawer -->
+    <div class="mobile-nav" id="mobileNavMenu">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <a href="#contact" class="btn btn-primary" style="margin-top: 0.5rem;">Let's Talk</a>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Hero Section
+       ========================================================================== -->
+  <section class="section hero-section" id="home">
+    <div class="container hero-grid">
+      <!-- Left Column: Copy & Actions -->
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <span>HELLO, I'M</span>
+        </div>
+        <h1 class="hero-name">Muhammad Affan Al Ghifari</h1>
+        <span class="hero-role">Web Developer &amp; System Developer</span>
+        
+        <h2 class="hero-headline">
+          Turning Ideas Into <span class="highlight">Digital Solutions.</span>
+        </h2>
+        
+        <p class="hero-desc">
+          I build websites and digital systems that transform ideas into functional digital solutions. I enjoy exploring how technology can solve real-world problems through thoughtful design and development.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            Explore My Projects
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+
+        <div class="hero-status-pill">
+          <span class="status-dot"></span>
+          <span>Open to web development &amp; system projects</span>
+        </div>
+      </div>
+
+      <!-- Right Column: Visual Profile Card -->
+      <div class="hero-visual">
+        <div class="profile-card">
+          <div class="profile-card-header">
+            <span class="profile-identity-tag">AFFAN.DEV // PROFILE</span>
+            <span class="brand-badge">ID: AMIKOM</span>
+          </div>
+
+          <div class="profile-image-container">
+            <img src="assets/images/profile/foto-affan.png" alt="Muhammad Affan Al Ghifari — Web Developer &amp; System Developer" class="profile-image">
+          </div>
+
+          <div class="profile-card-body">
+            <h3 class="profile-title">Muhammad Affan Al Ghifari</h3>
+            <p class="profile-subtitle">Informatics Student &bull; Developer</p>
+            <div class="profile-chips">
+              <span class="profile-chip">Web Development</span>
+              <span class="profile-chip">Information Systems</span>
+              <span class="profile-chip">PHP &amp; Laravel</span>
+              <span class="profile-chip">MySQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       About Section
+       ========================================================================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">ABOUT ME</span>
+        <h2 class="section-title">A little about me.</h2>
+        <p class="section-subtitle">Background, education, and development focus.</p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Biography Text -->
+        <div class="about-text">
+          <p>
+            I'm an Informatics student at Universitas AMIKOM Yogyakarta with a strong interest in Web Development and Information Systems.
+          </p>
+          <p>
+            I enjoy developing websites and web-based applications that solve real-world problems. My focus is on creating functional, user-friendly, and efficient digital solutions tailored to different business and organizational needs.
+          </p>
+          <p>
+            Through academic and collaborative projects, I continuously explore new technologies, improve my technical skills, and gain practical experience in software development.
+          </p>
+          
+          <div class="about-highlight-box">
+            <p>
+              &ldquo;I believe that technology is not just about writing code, but about creating solutions that bring value to people and businesses.&rdquo;
+            </p>
+          </div>
+        </div>
+
+        <!-- Fact Sheet Card -->
+        <div class="fact-card">
+          <h3 class="fact-card-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            Key Details
+          </h3>
+
+          <div class="fact-list">
+            <div class="fact-item">
+              <span class="fact-label">Education</span>
+              <span class="fact-value">Informatics &mdash; Universitas AMIKOM Yogyakarta</span>
+            </div>
+
+            <div class="fact-item">
+              <span class="fact-label">Primary Focus</span>
+              <span class="fact-value">Web Development &amp; Information Systems</span>
+            </div>
+
+            <div class="fact-item">
+              <span class="fact-label">Location Base</span>
+              <span class="fact-value">Indonesia</span>
+            </div>
+
+            <div class="fact-item">
+              <span class="fact-label">Direct Email</span>
+              <span class="fact-value">
+                <a href="mailto:affanzuko18@gmail.com">affanzuko18@gmail.com</a>
+              </span>
+            </div>
+
+            <div class="fact-item">
+              <span class="fact-label">GitHub Profile</span>
+              <span class="fact-value">
+                <a href="https://github.com/Affanzuko" target="_blank" rel="noopener noreferrer">
+                  github.com/Affanzuko
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </span>
+            </div>
+
+            <div class="fact-item">
+              <span class="fact-label">LinkedIn</span>
+              <span class="fact-value">
+                <a href="https://www.linkedin.com/in/muhammad-affan-al-ghifari-aa963b259/" target="_blank" rel="noopener noreferrer">
+                  Muhammad Affan Al Ghifari
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Skills Section
+       ========================================================================== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">TECHNICAL SKILLS</span>
+        <h2 class="section-title">Tools I work with.</h2>
+        <p class="section-subtitle">Categorized skills and technologies based on actual project implementations. No arbitrary percentage ratings.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Group 1: Frontend -->
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrapper">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <div>
+              <h3 class="skill-group-title">Frontend</h3>
+            </div>
+          </div>
+          <p class="skill-group-desc">Structured, responsive, and interactive user interfaces for modern web applications.</p>
+          <div class="skill-badge-list">
+            <span class="tech-badge">HTML5</span>
+            <span class="tech-badge">CSS3</span>
+            <span class="tech-badge">JavaScript</span>
+            <span class="tech-badge">Responsive Design</span>
+          </div>
+        </div>
+
+        <!-- Group 2: Backend -->
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrapper">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+            </div>
+            <div>
+              <h3 class="skill-group-title">Backend</h3>
+            </div>
+          </div>
+          <p class="skill-group-desc">Server-side application logic, routing, authentication, and architectural workflows.</p>
+          <div class="skill-badge-list">
+            <span class="tech-badge">PHP</span>
+            <span class="tech-badge">Laravel</span>
+            <span class="tech-badge">MVC Pattern</span>
+            <span class="tech-badge">REST APIs</span>
+          </div>
+        </div>
+
+        <!-- Group 3: Database -->
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrapper">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="skill-group-title">Database</h3>
+            </div>
+          </div>
+          <p class="skill-group-desc">Relational database design, relational integrity, transactions, and data modeling.</p>
+          <div class="skill-badge-list">
+            <span class="tech-badge">MySQL</span>
+            <span class="tech-badge">Database Design</span>
+            <span class="tech-badge">Query Optimization</span>
+          </div>
+        </div>
+
+        <!-- Group 4: Tools -->
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrapper">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="skill-group-title">Tools &amp; Workflow</h3>
+            </div>
+          </div>
+          <p class="skill-group-desc">Version control, collaborative code management, and development environment.</p>
+          <div class="skill-badge-list">
+            <span class="tech-badge">Git</span>
+            <span class="tech-badge">GitHub</span>
+            <span class="tech-badge">Visual Studio Code</span>
+          </div>
+        </div>
+
+        <!-- Group 5: Additional Competencies -->
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrapper">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <div>
+              <h3 class="skill-group-title">Additional Areas</h3>
+            </div>
+          </div>
+          <p class="skill-group-desc">Holistic capabilities spanning product usability, architecture, and system integration.</p>
+          <div class="skill-badge-list">
+            <span class="tech-badge">UI/UX</span>
+            <span class="tech-badge">Web Application Development</span>
+            <span class="tech-badge">System Analysis</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Featured Projects Section
+       ========================================================================== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">SELECTED WORK</span>
+        <h2 class="section-title">Projects I've worked on.</h2>
+        <p class="section-subtitle">
+          A selection of academic and collaborative projects where I explored how web technologies can be used to build practical digital solutions.
+        </p>
+      </div>
+
+      <div class="projects-list">
+        <!-- Project 1: ConcertTix -->
+        <article class="project-card">
+          <div class="project-media">
+            <span class="project-badge-overlay">Academic Team Project</span>
+            <div class="project-img-wrapper">
+              <img src="assets/images/concerttix/thumbnail.svg" alt="ConcertTix — Concert Ticket Booking Platform Landing Page Preview" loading="lazy">
+            </div>
+          </div>
+
+          <div class="project-content">
+            <span class="project-category">Web Application</span>
+            <h3 class="project-title">ConcertTix</h3>
+            <p class="project-subtitle">Concert Ticket Booking Platform</p>
+            <p class="project-description">
+              A web-based concert ticket platform that helps users discover events, compare ticket categories, and manage ticket purchases. Developed as an academic team project addressing ticket queues and category transparency.
+            </p>
+
+            <div class="project-role-box">
+              <div class="project-role-label">My Individual Contribution</div>
+              <p class="project-role-summary">
+                Landing Page, Login &amp; Sign Up Pages, 404 Page, About Us Page, Profile &amp; Ticket History Page, Payment Page, and Project Documentation.
+              </p>
+            </div>
+
+            <div class="project-tags">
+              <span class="tech-badge">HTML</span>
+              <span class="tech-badge">CSS</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">PHP</span>
+              <span class="tech-badge">MySQL</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="projects/concerttix.html" class="btn btn-primary btn-sm">
+                View Case Study
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <a href="https://github.com/Affanzuko/ConcertTix" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub Repository
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Niki Frozen -->
+        <article class="project-card reverse">
+          <div class="project-media">
+            <span class="project-badge-overlay">Collaborative Business System</span>
+            <div class="project-img-wrapper">
+              <img src="assets/images/niki-frozen/thumbnail.svg" alt="Niki Frozen — POS &amp; Inventory Management System Preview" loading="lazy">
+            </div>
+          </div>
+
+          <div class="project-content">
+            <span class="project-category">Information System</span>
+            <h3 class="project-title">Niki Frozen</h3>
+            <p class="project-subtitle">POS &amp; Inventory Management System</p>
+            <p class="project-description">
+              An integrated web-based system for managing retail transactions, inventory, financial records, and multi-branch operations for a frozen-food business operating 2 branches with approximately 15 employees.
+            </p>
+
+            <div class="project-role-box">
+              <div class="project-role-label">My Individual Contribution</div>
+              <p class="project-role-summary">
+                Cashier &amp; General Manager dashboards, Payment/scanner-related workflows, Product batch &amp; expiry-date settings, Expense menu, and UI/UX contribution.
+              </p>
+            </div>
+
+            <div class="project-tags">
+              <span class="tech-badge">Laravel</span>
+              <span class="tech-badge">PHP</span>
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge">64 Documented Tests (Pass)</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="projects/niki-frozen.html" class="btn btn-primary btn-sm">
+                View Case Study
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <a href="https://github.com/Affanzuko/Niki-Frozen" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub Repository
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Contact Section
+       ========================================================================== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact-card">
+        <span class="contact-eyebrow">GET IN TOUCH</span>
+        <h2 class="contact-title">Let's build something meaningful.</h2>
+        <p class="contact-desc">
+          Have an idea or project in mind? I'm open to connecting, collaborating, and exploring opportunities to build useful digital solutions.
+        </p>
+
+        <div class="contact-methods">
+          <!-- Email Card -->
+          <div class="contact-method-card">
+            <div class="contact-method-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <span class="contact-method-title">Direct Email</span>
+            <a href="mailto:affanzuko18@gmail.com" class="contact-method-link">affanzuko18@gmail.com</a>
+            <div class="email-copy-wrapper">
+              <button class="copy-btn copy-email-btn" data-email="affanzuko18@gmail.com" aria-label="Copy email address to clipboard">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                Copy Email
+              </button>
+            </div>
+          </div>
+
+          <!-- LinkedIn Card -->
+          <div class="contact-method-card">
+            <div class="contact-method-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </div>
+            <span class="contact-method-title">LinkedIn Profile</span>
+            <a href="https://www.linkedin.com/in/muhammad-affan-al-ghifari-aa963b259/" target="_blank" rel="noopener noreferrer" class="contact-method-link">Connect on LinkedIn</a>
+            <span style="font-size: 0.75rem; color: var(--color-muted);">Muhammad Affan Al Ghifari</span>
+          </div>
+
+          <!-- GitHub Card -->
+          <div class="contact-method-card">
+            <div class="contact-method-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </div>
+            <span class="contact-method-title">GitHub Repositories</span>
+            <a href="https://github.com/Affanzuko" target="_blank" rel="noopener noreferrer" class="contact-method-link">github.com/Affanzuko</a>
+            <span style="font-size: 0.75rem; color: var(--color-muted);">Browse Code Repositories</span>
+          </div>
+        </div>
+
+        <a href="mailto:affanzuko18@gmail.com" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          Send an Email Directly
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <span class="footer-wordmark">AFFAN<span class="brand-dot">.</span>DEV</span>
+        <span class="footer-tagline">Turning Ideas Into Digital Solutions.</span>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://github.com/Affanzuko" target="_blank" rel="noopener noreferrer" class="footer-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/muhammad-affan-al-ghifari-aa963b259/" target="_blank" rel="noopener noreferrer" class="footer-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          LinkedIn
+        </a>
+        <a href="mailto:affanzuko18@gmail.com" class="footer-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          Email
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        &copy; <span class="current-year">2026</span> Muhammad Affan Al Ghifari (AFFAN.DEV). Designed &amp; built according to product specifications.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

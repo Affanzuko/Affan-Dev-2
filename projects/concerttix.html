@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConcertTix Case Study — AFFAN.DEV | Muhammad Affan Al Ghifari</title>
+  
+  <meta name="description" content="Case study of ConcertTix: A web-based concert ticket discovery and booking platform. Overview, problem statement, key features, technology stack, and Muhammad Affan Al Ghifari's individual contributions.">
+  <meta name="author" content="Muhammad Affan Al Ghifari">
+  
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="ConcertTix Case Study — AFFAN.DEV">
+  <meta property="og:description" content="Web-based concert ticket booking platform. Detailed breakdown of features, technology stack, and individual contributions.">
+  <meta property="og:image" content="../assets/images/concerttix/thumbnail.svg">
+  
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Navigation Bar
+       ========================================================================== -->
+  <header class="site-nav">
+    <div class="container nav-container">
+      <a href="../index.html" class="nav-brand" aria-label="AFFAN.DEV Home">
+        <span>AFFAN<span class="brand-dot">.</span>DEV</span>
+        <span class="brand-badge">CASE STUDY</span>
+      </a>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="../index.html#home" class="nav-link">Home</a>
+        <a href="../index.html#about" class="nav-link">About</a>
+        <a href="../index.html#skills" class="nav-link">Skills</a>
+        <a href="../index.html#projects" class="nav-link active">Projects</a>
+        <a href="../index.html#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="../index.html#projects" class="btn btn-secondary btn-sm">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+          All Projects
+        </a>
+        <button class="mobile-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileNavMenu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav Drawer -->
+    <div class="mobile-nav" id="mobileNavMenu">
+      <a href="../index.html#home" class="nav-link">Home</a>
+      <a href="../index.html#about" class="nav-link">About</a>
+      <a href="../index.html#skills" class="nav-link">Skills</a>
+      <a href="../index.html#projects" class="nav-link">Projects</a>
+      <a href="../index.html#contact" class="nav-link">Contact</a>
+      <a href="../index.html#projects" class="btn btn-secondary" style="margin-top: 0.5rem;">Back to Projects</a>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Case Study Hero
+       ========================================================================== -->
+  <section class="case-study-hero">
+    <div class="container">
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <a href="../index.html#projects">Projects</a>
+        <span class="breadcrumb-separator">/</span>
+        <span class="breadcrumb-current">ConcertTix</span>
+      </nav>
+
+      <div class="case-study-header">
+        <span class="case-study-category">WEB APPLICATION // CASE STUDY</span>
+        <h1 class="case-study-title">ConcertTix</h1>
+        <p class="case-study-subtitle">Concert Ticket Booking &amp; Discovery Platform</p>
+        <p class="case-study-summary">
+          ConcertTix is a web-based concert ticket discovery and booking platform designed to make it easier for users to explore concerts, compare ticket facilities across tiers, and manage ticket purchases through a unified, responsive interface.
+        </p>
+
+        <!-- Action CTAs -->
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2.5rem;">
+          <a href="https://github.com/Affanzuko/ConcertTix" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            View GitHub Repository
+          </a>
+          <a href="#gallery" class="btn btn-secondary">Explore Screenshots</a>
+        </div>
+      </div>
+
+      <!-- Project Metadata Grid -->
+      <div class="project-meta-grid">
+        <div class="meta-item">
+          <span class="meta-label">Project Type</span>
+          <span class="meta-value">Academic Team Project</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Domain</span>
+          <span class="meta-value">Event &amp; Concert Ticketing</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Affan's Role</span>
+          <span class="meta-value">Frontend &amp; Flow Developer</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Core Stack</span>
+          <span class="meta-value">HTML, CSS, JS, PHP, MySQL</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Source Code</span>
+          <span class="meta-value">
+            <a href="https://github.com/Affanzuko/ConcertTix" target="_blank" rel="noopener noreferrer">github.com/Affanzuko/ConcertTix</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Case Study Body
+       ========================================================================== -->
+  <main class="case-study-body">
+    <div class="container">
+      
+      <!-- Section 1: Problem & Solution -->
+      <section class="content-block">
+        <h2 class="block-title">Problem &amp; Solution</h2>
+        <p style="color: var(--color-muted); font-size: 1.0625rem; max-width: 800px;">
+          Traditional concert ticket acquisition often suffered from opaque ticket benefit comparisons, physical queue bottlenecks, and fragmented booking confirmations.
+        </p>
+
+        <div class="problem-solution-grid">
+          <!-- Problem Box -->
+          <div class="pro-sol-card problem">
+            <div class="pro-sol-card-header">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-warning)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+              Documented Challenges
+            </div>
+            <ul>
+              <li>Physical queues during ticket purchases causing friction and delays for concertgoers.</li>
+              <li>Difficulty understanding differences between various ticket facilities and tiers.</li>
+              <li>Lack of transparent, side-by-side facility comparison for prospective buyers.</li>
+              <li>Need for accurate real-time ticket quota management per ticket class.</li>
+            </ul>
+          </div>
+
+          <!-- Solution Box -->
+          <div class="pro-sol-card solution">
+            <div class="pro-sol-card-header">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              Implemented Solution
+            </div>
+            <ul>
+              <li>Centralized web catalog enabling fast concert discovery and multifaceted filtering.</li>
+              <li>Three explicit ticket categories: <strong>Regular</strong>, <strong>VIP</strong>, and <strong>Platinum</strong> with transparent facility matrices.</li>
+              <li>End-to-end purchasing workflow from concert selection, tier choice, checkout, to order confirmation.</li>
+              <li>Dedicated user profile portal displaying booking history and digital ticket verification.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: Key Features -->
+      <section class="content-block">
+        <h2 class="block-title">Key Features</h2>
+        <p style="color: var(--color-muted); font-size: 1.0625rem;">
+          The system was structured around verified user and administrative workflows:
+        </p>
+
+        <div class="features-grid">
+          <div class="feature-box">
+            <div class="feature-number">01</div>
+            <h3 class="feature-title">Concert Discovery</h3>
+            <p class="feature-desc">Interactive landing and exploration catalog highlighting upcoming concerts, featured headliners, and event dates.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-number">02</div>
+            <h3 class="feature-title">Search &amp; Filters</h3>
+            <p class="feature-desc">Query engine allowing users to filter events by keyword, music genre, event date, and concert location.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-number">03</div>
+            <h3 class="feature-title">Ticket Tier Comparison</h3>
+            <p class="feature-desc">Clear breakdown comparing benefits, seat zones, and facility access between Regular, VIP, and Platinum classes.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-number">04</div>
+            <h3 class="feature-title">User Authentication</h3>
+            <p class="feature-desc">Secure account creation, login credentials, and user preference setup including favorite music genres.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-number">05</div>
+            <h3 class="feature-title">Booking &amp; Checkout</h3>
+            <p class="feature-desc">Integrated cart, ticket quantity selection, payment summary calculation, and purchase confirmation screen.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-number">06</div>
+            <h3 class="feature-title">Profile &amp; Ticket History</h3>
+            <p class="feature-desc">Personal user account view showing previous purchases, active tickets, and transaction receipts.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-number">07</div>
+            <h3 class="feature-title">Administrative Management</h3>
+            <p class="feature-desc">Back-office tools to manage concert information, schedule updates, and ticket quotas per category.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: My Individual Contributions (Prominent & Clear) -->
+      <section class="content-block">
+        <h2 class="block-title">My Role &amp; Individual Contributions</h2>
+        <p style="color: var(--color-muted); font-size: 1.0625rem;">
+          ConcertTix was developed collaboratively as an academic team project. In accordance with the project task allocation, my primary personal contributions focused on user-facing page development, checkout flows, and project documentation:
+        </p>
+
+        <div class="contribution-spotlight">
+          <div class="contribution-header">
+            <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--color-text);">Documented Personal Deliverables</h3>
+            <span class="contribution-tag">Verified Project Allocation</span>
+          </div>
+
+          <div class="contribution-list">
+            <!-- Item 1 -->
+            <div class="contribution-item">
+              <div class="contribution-item-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Landing Page
+              </div>
+              <p class="contribution-item-desc">Engineered the responsive landing page layout, featured concert hero spotlight, and navigation entry points.</p>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="contribution-item">
+              <div class="contribution-item-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Login &amp; Sign Up Pages
+              </div>
+              <p class="contribution-item-desc">Built accessible forms for user registration, authentication credential handling, and genre preference selection.</p>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="contribution-item">
+              <div class="contribution-item-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Profile &amp; Ticket History Page
+              </div>
+              <p class="contribution-item-desc">Developed user account view displaying order history, user profile parameters, and purchased ticket classes.</p>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="contribution-item">
+              <div class="contribution-item-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Payment &amp; Checkout Page
+              </div>
+              <p class="contribution-item-desc">Created the order checkout flow, fee calculations, and payment summary presentation interface.</p>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="contribution-item">
+              <div class="contribution-item-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                About Us &amp; 404 Pages
+              </div>
+              <p class="contribution-item-desc">Designed platform information pages and user-friendly 404 error handling to prevent dead ends.</p>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="contribution-item">
+              <div class="contribution-item-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Project Documentation
+              </div>
+              <p class="contribution-item-desc">Authored project requirements, flow diagrams, system documentation, and presentation materials.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: Technology Stack -->
+      <section class="content-block">
+        <h2 class="block-title">Technology Stack</h2>
+        <p style="color: var(--color-muted); font-size: 1.0625rem; margin-bottom: 1.5rem;">
+          Technologies verified from the project repository and academic documentation:
+        </p>
+
+        <div class="skills-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+          <div class="skill-card">
+            <h3 class="skill-group-title" style="margin-bottom: 0.5rem;">HTML5</h3>
+            <p class="skill-group-desc">Semantic document structure, accessible input forms, and responsive booking layouts.</p>
+          </div>
+          <div class="skill-card">
+            <h3 class="skill-group-title" style="margin-bottom: 0.5rem;">CSS3</h3>
+            <p class="skill-group-desc">Custom responsive styling, media queries, CSS Flexbox/Grid, and modern dark aesthetics.</p>
+          </div>
+          <div class="skill-card">
+            <h3 class="skill-group-title" style="margin-bottom: 0.5rem;">JavaScript</h3>
+            <p class="skill-group-desc">Client-side form validation, modal controls, and dynamic pricing calculations.</p>
+          </div>
+          <div class="skill-card">
+            <h3 class="skill-group-title" style="margin-bottom: 0.5rem;">PHP</h3>
+            <p class="skill-group-desc">Server-side template rendering, session management, auth handling, and routing.</p>
+          </div>
+          <div class="skill-card">
+            <h3 class="skill-group-title" style="margin-bottom: 0.5rem;">MySQL</h3>
+            <p class="skill-group-desc">Relational database storing concerts, ticket quotas, customer orders, and credentials.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5: Screenshot Gallery -->
+      <section class="content-block" id="gallery">
+        <h2 class="block-title">Documented Application Gallery</h2>
+        <p style="color: var(--color-muted); font-size: 1.0625rem;">
+          Wireframes and interface mockups corresponding to documented application routes and verified task deliverables. Click on any item to view details:
+        </p>
+
+        <div class="gallery-grid">
+          <!-- Item 1 -->
+          <div class="gallery-card" data-gallery-item data-title="Landing Page" data-desc="Hero spotlight, upcoming concerts, and entry point to ticket booking." data-src="../assets/images/concerttix/01-landing-page.svg">
+            <div class="gallery-media">
+              <img src="../assets/images/concerttix/01-landing-page.svg" alt="ConcertTix Landing Page UI" loading="lazy">
+              <div class="gallery-overlay-hint">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                Expand View
+              </div>
+            </div>
+            <div class="gallery-info">
+              <h4 class="gallery-title">01. Landing Page</h4>
+              <p class="gallery-desc">Hero spotlight, upcoming concerts, and entry point to ticket booking.</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="gallery-card" data-gallery-item data-title="Concert Search & Filters" data-desc="Search engine with filtering by musical genre, concert date, and location." data-src="../assets/images/concerttix/02-search-listing.svg">
+            <div class="gallery-media">
+              <img src="../assets/images/concerttix/02-search-listing.svg" alt="Concert Search & Filters UI" loading="lazy">
+              <div class="gallery-overlay-hint">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                Expand View
+              </div>
+            </div>
+            <div class="gallery-info">
+              <h4 class="gallery-title">02. Concert Search &amp; Filters</h4>
+              <p class="gallery-desc">Search engine with filtering by musical genre, concert date, and location.</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="gallery-card" data-gallery-item data-title="Concert Detail & Ticket Classes" data-desc="Detailed concert schedule, venue information, and facility comparison for Regular, VIP, and Platinum." data-src="../assets/images/concerttix/03-concert-detail.svg">
+            <div class="gallery-media">
+              <img src="../assets/images/concerttix/03-concert-detail.svg" alt="Concert Detail & Ticket Classes UI" loading="lazy">
+              <div class="gallery-overlay-hint">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                Expand View
+              </div>
+            </div>
+            <div class="gallery-info">
+              <h4 class="gallery-title">03. Ticket Category Comparison</h4>
+              <p class="gallery-desc">Detailed concert schedule and facility comparison for Regular, VIP, and Platinum tiers.</p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="gallery-card" data-gallery-item data-title="Authentication & Preferences" data-desc="User login and registration screens including music genre preference setup." data-src="../assets/images/concerttix/04-auth.svg">
+            <div class="gallery-media">
+              <img src="../assets/images/concerttix/04-auth.svg" alt="User Authentication & Preferences UI" loading="lazy">
+              <div class="gallery-overlay-hint">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                Expand View
+              </div>
+            </div>
+            <div class="gallery-info">
+              <h4 class="gallery-title">04. Authentication &amp; Preferences</h4>
+              <p class="gallery-desc">User login and registration screens including music genre preference setup.</p>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="gallery-card" data-gallery-item data-title="Profile & Ticket History" data-desc="User portal showing purchased ticket receipts, event details, and profile data." data-src="../assets/images/concerttix/05-profile-history.svg">
+            <div class="gallery-media">
+              <img src="../assets/images/concerttix/05-profile-history.svg" alt="Profile & Ticket History UI" loading="lazy">
+              <div class="gallery-overlay-hint">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                Expand View
+              </div>
+            </div>
+            <div class="gallery-info">
+              <h4 class="gallery-title">05. Profile &amp; Ticket History</h4>
+              <p class="gallery-desc">User portal showing purchased ticket receipts, event details, and profile data.</p>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="gallery-card" data-gallery-item data-title="Payment & Checkout Flow" data-desc="Checkout interface, cart fee verification, and purchase confirmation screen." data-src="../assets/images/concerttix/06-payment.svg">
+            <div class="gallery-media">
+              <img src="../assets/images/concerttix/06-payment.svg" alt="Payment & Checkout Flow UI" loading="lazy">
+              <div class="gallery-overlay-hint">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                Expand View
+              </div>
+            </div>
+            <div class="gallery-info">
+              <h4 class="gallery-title">06. Payment &amp; Checkout Flow</h4>
+              <p class="gallery-desc">Checkout interface, cart fee verification, and purchase confirmation screen.</p>
+            </div>
+          </div>
+
+          <!-- Item 7 -->
+          <div class="gallery-card" data-gallery-item data-title="About Us & 404 Error Handling" data-desc="Platform information page and user-friendly error page preventing navigation dead-ends." data-src="../assets/images/concerttix/07-about.svg">
+            <div class="gallery-media">
+              <img src="../assets/images/concerttix/07-about.svg" alt="About Us & 404 Error Page UI" loading="lazy">
+              <div class="gallery-overlay-hint">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                Expand View
+              </div>
+            </div>
+            <div class="gallery-info">
+              <h4 class="gallery-title">07. About Us &amp; 404 Page</h4>
+              <p class="gallery-desc">Platform information page and error page preventing navigation dead-ends.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 6: Bottom Navigation & Next Project Switcher -->
+      <section class="case-study-bottom-nav">
+        <div class="switch-project-card">
+          <div class="switch-project-info">
+            <span class="switch-label">Next Featured Project</span>
+            <h3 class="switch-title">Niki Frozen &mdash; POS &amp; Inventory System</h3>
+            <p style="color: var(--color-muted); font-size: 0.9375rem;">
+              An integrated web-based system for retail transactions, stock tracking, and multi-branch management.
+            </p>
+          </div>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="niki-frozen.html" class="btn btn-primary">
+              View Niki Frozen Case Study
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="../index.html#projects" class="btn btn-secondary">
+              Back to All Projects
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ==========================================================================
+       Lightbox Modal
+       ========================================================================== -->
+  <div class="lightbox-modal" id="galleryLightbox" role="dialog" aria-modal="true" aria-label="Screenshot Preview">
+    <div class="lightbox-content">
+      <div class="lightbox-header">
+        <h3 class="lightbox-title">Screenshot Preview</h3>
+        <button class="lightbox-close" aria-label="Close image preview">&times;</button>
+      </div>
+      <div class="lightbox-img-wrapper">
+        <img src="" alt="" class="lightbox-img">
+      </div>
+      <div class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <span class="footer-wordmark">AFFAN<span class="brand-dot">.</span>DEV</span>
+        <span class="footer-tagline">Turning Ideas Into Digital Solutions.</span>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://github.com/Affanzuko" target="_blank" rel="noopener noreferrer" class="footer-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/muhammad-affan-al-ghifari-aa963b259/" target="_blank" rel="noopener noreferrer" class="footer-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          LinkedIn
+        </a>
+        <a href="mailto:affanzuko18@gmail.com" class="footer-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          Email
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        &copy; <span class="current-year">2026</span> Muhammad Affan Al Ghifari (AFFAN.DEV). All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JS -->
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
